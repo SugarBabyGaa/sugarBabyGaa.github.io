@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {"id": "叶文洁", "group": 1},
+    {"id": "杨冬", "group": 1},
+    {"id": "申玉菲", "group": 1},
+    {"id": "庄颜", "group": 1},
+    {"id": "东方延绪", "group": 1},
+    {"id": "山杉惠子", "group": 1},
+    {"id": "萨伊", "group": 1},
+    {"id": "西子", "group": 1},
+
+    {"id": "史强", "group": 2},
+    {"id": "汪淼", "group": 2},
+    {"id": "丁仪", "group": 2},
+    {"id": "杨卫宁", "group": 2},
+    {"id": "叶哲泰", "group": 2},
+    {"id": "雷志成", "group": 2},
+    {"id": "常伟思", "group": 2},
+    {"id": "章北海", "group": 2},
+    {"id": "魏成", "group": 2},
+    {"id": "吴岳", "group": 2},
+    {"id": "潘寒", "group": 2},
+    {"id": "伊文思", "group": 2},
+
+
+    {"id": "罗辑", "group": 2},
+    {"id": "比尔·希恩斯", "group": 2},
+    {"id": "曼努尔·雷迪亚兹", "group": 2},
+    {"id": "弗里德里克·泰勒", "group": 2},
+    {"id": "威廉·科兹莫", "group": 2},
+    {"id": "坎特", "group": 2},
+    {"id": "史晓明", "group": 2},
+    {"id": "破壁人一号", "group": 2},
+    {"id": "破壁人二号", "group": 2},
+
+    {"id": "红岸基地", "group": 3},
+    {"id": "科学边界", "group": 3},
+    {"id": "三体游戏", "group": 3},
+    {"id": "面壁者", "group": 3},
+    {"id": "破壁人", "group": 3},
+    {"id": "量子舰队", "group": 3},
+    {"id": "思想钢印/钢印族", "group": 3},
+    {"id": "ETO", "group": 3},
+    {"id": "PDC", "group": 3},
+
+    {"id": "三体世界", "group": 3},
+    {"id": "三体舰队", "group": 3},
+
+
+    {"id": "地球国际", "group": 3},
+    {"id": "联合舰队", "group": 3},
+    {"id": "太空舰队", "group": 3},
+    {"id": "亚洲舰队", "group": 3},
+    {"id": "欧洲舰队", "group": 3},
+    {"id": "北美舰队", "group": 3},
+
+    {"id": "螳螂号", "group": 3},
+    {"id": "自然选择号", "group": 3},
+    {"id": "量子号", "group": 3},
+    {"id": "青铜时代号", "group": 3},
+
+    {"id": "追击舰队", "group": 3},
+    {"id": "蓝色空间号", "group": 3},
+    {"id": "进取号", "group": 3},
+    {"id": "深空号", "group": 3},
+    {"id": "终极规律号", "group": 3},
+
+
+
+
+
+
+
+    {"id": "1379号监听员", "group": 4},
+    {"id": "元首", "group": 4},
+    {"id": "科学执政官", "group": 4},
+    {"id": "军事执政官", "group": 4},
+    {"id": "农业执政官", "group": 4},
+
+    {"id": "恒星187J3X1", "group": 5},
+    {"id": "水滴", "group": 5},
+
+
+    {"id": "周文王", "group": 6},
+    {"id": "牛顿", "group": 6},
+    {"id": "冯诺依曼", "group": 6},
+    {"id": "亚里士多德", "group": 6},
+    {"id": "墨子", "group": 6},
+    {"id": "孔子", "group": 6},
+    {"id": "爱因斯坦", "group": 6},
+    {"id": "秦始皇", "group": 6}
+
+  ],
+  "links": [
+    {"source": "汪淼", "target": "史强", "value": 2},
+    {"source": "汪淼", "target": "杨冬", "value": 2},
+    {"source": "汪淼", "target": "申玉菲", "value": 2},
+    {"source": "汪淼", "target": "叶文洁", "value": 2},
+    {"source": "汪淼", "target": "丁仪", "value": 2},
+
+
+    {"source": "叶文洁", "target": "杨卫宁", "value": 2},
+    {"source": "叶文洁", "target": "杨冬", "value": 2},
+    {"source": "叶文洁", "target": "叶哲泰", "value": 2},
+    {"source": "叶文洁", "target": "雷志成", "value": 2},
+    {"source": "杨卫宁", "target": "杨冬", "value": 2},
+    {"source": "杨冬", "target": "丁仪", "value": 2},
+    {"source": "叶文洁", "target": "罗辑", "value": 2},
+    {"source": "叶文洁", "target": "1379号监听员", "value": 2},
+
+    {"source": "红岸基地", "target": "叶文洁", "value": 2},
+    {"source": "红岸基地", "target": "杨卫宁", "value": 2},
+    {"source": "红岸基地", "target": "雷志成", "value": 2},
+
+    {"source": "常伟思", "target": "史强", "value": 2},
+    {"source": "常伟思", "target": "章北海", "value": 2},
+    {"source": "章北海", "target": "吴岳", "value": 2},
+    {"source": "章北海", "target": "丁仪", "value": 2},
+    {"source": "弗里德里克·泰勒", "target": "丁仪", "value": 2},
+
+    {"source": "面壁者", "target": "罗辑", "value": 2},
+    {"source": "面壁者", "target": "比尔·希恩斯", "value": 2},
+    {"source": "面壁者", "target": "曼努尔·雷迪亚兹", "value": 2},
+    {"source": "面壁者", "target": "弗里德里克·泰勒", "value": 2},
+    {"source": "破壁人", "target": "罗辑", "value": 2},
+    {"source": "破壁人", "target": "破壁人一号", "value": 2},
+    {"source": "破壁人", "target": "破壁人二号", "value": 2},
+    {"source": "破壁人", "target": "山杉惠子", "value": 2},
+    {"source": "比尔·希恩斯", "target": "山杉惠子", "value": 2},
+    {"source": "比尔·希恩斯", "target": "思想钢印/钢印族", "value": 2},
+    {"source": "弗里德里克·泰勒", "target": "量子舰队", "value": 2},
+    {"source": "弗里德里克·泰勒", "target": "破壁人一号", "value": 2},
+    {"source": "曼努尔·雷迪亚兹", "target": "破壁人二号", "value": 2},
+    {"source": "曼努尔·雷迪亚兹", "target": "威廉·科兹莫", "value": 2},
+
+    {"source": "罗辑", "target": "恒星187J3X1", "value": 2},
+    {"source": "罗辑", "target": "萨伊", "value": 2},
+    {"source": "罗辑", "target": "庄颜", "value": 2},
+    {"source": "罗辑", "target": "史强", "value": 2},
+    {"source": "罗辑", "target": "弗里德里克·泰勒", "value": 2},
+    {"source": "罗辑", "target": "坎特", "value": 2},
+    {"source": "史强", "target": "史晓明", "value": 2},
+
+
+    {"source": "PDC", "target": "面壁者", "value": 2},
+    {"source": "PDC", "target": "萨伊", "value": 2},
+    {"source": "PDC", "target": "坎特", "value": 2},
+
+    {"source": "ETO", "target": "叶文洁", "value": 2},
+    {"source": "ETO", "target": "伊文思", "value": 2},
+    {"source": "ETO", "target": "潘寒", "value": 2},
+    {"source": "ETO", "target": "山杉惠子", "value": 2},
+    {"source": "ETO", "target": "罗辑", "value": 2},
+
+
+    {"source": "科学边界", "target": "汪淼", "value": 2},
+    {"source": "科学边界", "target": "叶文洁", "value": 2},
+    {"source": "科学边界", "target": "杨冬", "value": 2},
+    {"source": "科学边界", "target": "申玉菲", "value": 2},
+    {"source": "科学边界", "target": "潘寒", "value": 2},
+    {"source": "魏成", "target": "申玉菲", "value": 2},
+    {"source": "潘寒", "target": "申玉菲", "value": 2},
+
+    {"source": "汪淼", "target": "三体游戏", "value": 2},
+    {"source": "三体游戏", "target": "周文王", "value": 2},
+    {"source": "三体游戏", "target": "牛顿", "value": 2},
+    {"source": "三体游戏", "target": "冯诺依曼", "value": 2},
+    {"source": "三体游戏", "target": "亚里士多德", "value": 2},
+    {"source": "三体游戏", "target": "墨子", "value": 2},
+    {"source": "三体游戏", "target": "孔子", "value": 2},
+    {"source": "三体游戏", "target": "爱因斯坦", "value": 2},
+    {"source": "三体游戏", "target": "秦始皇", "value": 2},
+
+    {"source": "ETO", "target": "三体世界", "value": 2},
+    {"source": "三体世界", "target": "1379号监听员", "value": 2},
+    {"source": "三体世界", "target": "元首", "value": 2},
+    {"source": "三体世界", "target": "科学执政官", "value": 2},
+    {"source": "三体世界", "target": "军事执政官", "value": 2},
+    {"source": "三体世界", "target": "农业执政官", "value": 2},
+    {"source": "三体世界", "target": "三体舰队", "value": 2},
+    {"source": "三体舰队", "target": "水滴", "value": 2},
+
+
+    {"source": "量子舰队", "target": "太空舰队", "value": 2},
+    {"source": "太空舰队", "target": "东方延绪", "value": 2},
+    {"source": "太空舰队", "target": "西子", "value": 2},
+    {"source": "太空舰队", "target": "章北海", "value": 2},
+
+    {"source": "联合舰队", "target": "太空舰队", "value": 2},
+    {"source": "联合舰队", "target": "地球国际", "value": 2},
+
+    {"source": "水滴", "target": "联合舰队", "value": 2},
+    {"source": "地球国际", "target": "螳螂号", "value": 2},
+    {"source": "螳螂号", "target": "西子", "value": 2},
+    {"source": "螳螂号", "target": "丁仪", "value": 2},
+    {"source": "丁仪", "target": "水滴", "value": 2},
+
+    {"source": "太空舰队", "target": "亚洲舰队", "value": 2},
+    {"source": "太空舰队", "target": "欧洲舰队", "value": 2},
+    {"source": "太空舰队", "target": "北美舰队", "value": 2},
+    {"source": "亚洲舰队", "target": "自然选择号", "value": 2},
+    {"source": "太空舰队", "target": "量子号", "value": 2},
+    {"source": "太空舰队", "target": "青铜时代号", "value": 2},
+
+    {"source": "自然选择号", "target": "东方延绪", "value": 2},
+    {"source": "自然选择号", "target": "章北海", "value": 2},
+
+    {"source": "自然选择号", "target": "追击舰队", "value": 2},
+    {"source": "追击舰队", "target": "蓝色空间号", "value": 2},
+    {"source": "追击舰队", "target": "进取号", "value": 2},
+    {"source": "追击舰队", "target": "深空号", "value": 2},
+    {"source": "追击舰队", "target": "终极规律号", "value": 2}
+
+
+
+
+
+
+
+
+  ]
+}

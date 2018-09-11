@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    .links line {
+        stroke: #999;
+        stroke-opacity: 0.6;
+    }
+
+    .nodes circle {
+        stroke: #fff;
+        stroke-width: 2px;
+    }
+
+    text {
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+</style>
+<div style="display:flex;flex-direction:row;">
+    <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(31, 119, 180);"></span>
+        <span>女性角色</span>
+    </div>
+  <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(174, 199, 232);"></span>
+        <span>男性角色</span>
+    </div>
+  <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(255, 127, 14);"></span>
+        <span>组织</span>
+    </div>
+  <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(255, 187, 120);"></span>
+        <span>三体世界</span>
+    </div>
+  <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(152, 223, 138);"></span>
+        <span>三体游戏</span>
+    </div>
+  <div style="margin-right: 20px;">
+        <span style="display:inline-block;border-radius:10px;width:10px;height:10px;background-color:rgb(44, 160, 44);"></span>
+        <span>其他</span>
+    </div>
+    <div>
+        <span>(*锚点可以拖拽</span>
+    </div>
+</div>
+<svg width="100%" height="700"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+    //var json = require('./graph')
+	var svg = d3.select("svg"),
+		width = +svg.attr("width"),
+		height = +svg.attr("height");
+    var width = 960,
+        height = 600
+	var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+	var simulation = d3.forceSimulation()
+		.force("link", d3.forceLink().distance(() => 60).id(function(d) { return d.id; }))
+		.force("charge", d3.forceManyBody())
+		.force("center", d3.forceCenter(width / 2 + 100, height / 2))
+
+
+
+
+	d3.json("graph.json", function(error, graph) {
+		if (error) throw error;
+		var link = svg.append("g")
+			.attr("class", "links")
+			.selectAll("line")
+			.data(graph.links)
+			.enter().append("line")
+			.attr("stroke-width", function(d) { return Math.sqrt(d.value); })
+
+		var node = svg.append("g")
+			.attr("class", "nodes")
+			.selectAll("g")
+			.data(graph.nodes)
+			.enter().append("g")
+
+		var circles = node.append("circle")
+			.attr("r", 9)
+			.attr("fill", function(d) { return color(d.group); })
+			.call(d3.drag()
+				.on("start", dragstarted)
+				.on("drag", dragged)
+				.on("end", dragended));
+
+		var lables = node.append("text")
+			.text(function(d) {
+				return d.id;
+			})
+			.attr('x', 6)
+			.attr('y', 3);
+
+		node.append("title")
+			.text(function(d) { return d.id; });
+
+		simulation
+			.nodes(graph.nodes)
+			.on("tick", ticked);
+
+		simulation.force("link")
+			.links(graph.links);
+
+		function ticked() {
+			link
+				.attr("x1", function(d) { return d.source.x; })
+				.attr("y1", function(d) { return d.source.y; })
+				.attr("x2", function(d) { return d.target.x; })
+				.attr("y2", function(d) { return d.target.y; });
+
+			node
+				.attr("transform", function(d) {
+					return "translate(" + d.x + "," + d.y + ")";
+				})
+		}
+	});
+
+	function dragstarted(d) {
+		if (!d3.event.active) simulation.alphaTarget(0.9).restart();
+		d.fx = d.x;
+		d.fy = d.y;
+	}
+
+	function dragged(d) {
+		d.fx = d3.event.x;
+		d.fy = d3.event.y;
+	}
+
+	function dragended(d) {
+		if (!d3.event.active) simulation.alphaTarget(0);
+		d.fx = null;
+		d.fy = null;
+	}
+
+</script>
