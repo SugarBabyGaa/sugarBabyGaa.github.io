@@ -16,7 +16,7 @@
 
     text {
         font-family: sans-serif;
-        font-size: 12px;
+        font-size: 11px;
     }
 
 </style>
@@ -61,7 +61,7 @@
 	var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 	var simulation = d3.forceSimulation()
-		.force("link", d3.forceLink().distance(() => 70).id(function(d) { return d.id; }))
+		.force("link", d3.forceLink().distance((d) => d.value).id(function(d) { return d.id; }))
 		.force("charge", d3.forceManyBody())
 		.force("center", d3.forceCenter(width / 2 , height / 2 + 30))
 
@@ -75,7 +75,7 @@
 			.selectAll("line")
 			.data(graph.links)
 			.enter().append("line")
-			.attr("stroke-width", function(d) { return Math.sqrt(d.value); })
+			.attr("stroke-width", function() { return 2; })
 
 		var node = svg.append("g")
 			.attr("class", "nodes")
@@ -95,8 +95,8 @@
 			.text(function(d) {
 				return d.id;
 			})
-			.attr('x', 6)
-			.attr('y', 3);
+			.attr('x', 8)
+			.attr('y', 6);
 
 		node.append("title")
 			.text(function(d) { return d.id; });
